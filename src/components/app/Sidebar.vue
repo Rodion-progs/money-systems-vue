@@ -10,19 +10,20 @@
 </template>
 
 <script>
-    export default {
-        name: "Sidebar.vue",
-        props: ['value'],
-        data: () => ({
-            links: [
-                {title: 'Счет', url: '/', exact: true},
-                {title: 'История', url: '/history'},
-                {title: 'Планирование', url: 'planning'},
-                {title: 'Новая запись', url: 'record'},
-                {title: 'Категории', url: 'categories'}
-            ]
-        })
-    }
+  import localazeFilter from "@/filter/localize.filter";
+  export default {
+      name: "Sidebar.vue",
+      props: ['value'],
+      data: () => ({
+          links: [
+              {title: localazeFilter('Menu_Bill'), url: '/', exact: true},
+              {title: localazeFilter('Menu_History'), url: '/history'},
+              {title: localazeFilter('Menu_Planning'), url: 'planning'},
+              {title: localazeFilter('Menu_Record'), url: 'record'},
+              {title: localazeFilter('Menu_Category'), url: 'categories'}
+          ]
+      })
+  }
 </script>
 
 <style scoped>

@@ -1,0 +1,14 @@
+{
+  "ProfileTitle": "Профиль",
+  "Message_EnterName": "Введите имя",
+  "Name": "Имя",
+  "Update": "Обновить",
+  "Menu_Bill": "Счёт",
+  "Menu_History": "История",
+  "Menu_Planning": "Планирование",
+  "Menu_Record": "Новая запись",
+  "Menu_Category": "Категории",
+  "Title_Profile": "Профиль",
+  "Logout": "Вы вышли из системы",
+  "Login": "Для начала войдите в систему"
+}
