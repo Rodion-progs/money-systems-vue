@@ -16,9 +16,9 @@
 
           <tbody>
           <tr v-for="cur of currencies" :key="cur">
-            <td>{{cur}}</td>
-            <td>{{getCurrency(cur) | currency()}}</td>
-            <td>{{date | date('date')}}</td>
+            <td data-label="Валюта">{{cur}}</td>
+            <td data-label="Курс">{{getCurrency(cur) | currency()}}</td>
+            <td data-label="Дата">{{date | date('date')}}</td>
           </tr>
           </tbody>
         </table>

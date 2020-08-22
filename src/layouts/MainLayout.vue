@@ -48,7 +48,7 @@
     },
     methods: {
       updateWidth() {
-        if(window.innerWidth < 600) {
+        if(window.innerWidth < 650) {
           this.isOpen= false
         }
       }

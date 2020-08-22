@@ -13,17 +13,17 @@
 
     <tbody v-for="(record) of records" :key="record.id">
     <tr>
-      <td>{{ record.number + 1}}</td>
-      <td>{{ record.amount | currency('RUB') }}</td>
-      <td>{{ record.date | date('datetime') }}</td>
-      <td>{{record.categoryName}}</td>
-      <td>
+      <td data-label="#">{{ record.number}}</td>
+      <td data-label="Сумма">{{ record.amount | currency('RUB') }}</td>
+      <td data-label="Дата">{{ record.date | date('datetime') }}</td>
+      <td data-label="Категория">{{record.categoryName}}</td>
+      <td data-label="Тип">
         <span
                 :class="[record.typeClass]"
                 class="white-text badge"
         >{{record.typeText}}</span>
       </td>
-      <td>
+      <td data-label="Открыть">
         <button
                 v-tooltip="'Посмотреть запись'"
                 class="btn-small btn"
